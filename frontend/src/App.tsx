@@ -48,7 +48,7 @@ function App() {
   };
 
   const formatTime = (dateStr: string) => {
-    const d = new Date(dateStr + 'Z');
+    const d = new Date(dateStr);
     return d.toLocaleString('zh-CN');
   };
 

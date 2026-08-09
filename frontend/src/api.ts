@@ -5,7 +5,7 @@ export interface Message {
   created_at: string;
 }
 
-const BASE = '/api';
+const BASE = import.meta.env.VITE_API_URL || '/api';
 
 export async function fetchMessages(): Promise<Message[]> {
   const res = await fetch(`${BASE}/messages`);

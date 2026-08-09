@@ -6,8 +6,6 @@ import { initDB } from './db';
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-console.log('DATABASE_URL configured:', process.env.DATABASE_URL ? 'Yes' : 'NO - MISSING!');
-
 app.use(cors());
 app.use(express.json());
 app.use(routes);
